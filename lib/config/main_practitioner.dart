@@ -5,33 +5,33 @@ import 'package:safe_ap/core_utils/config/flavor_config.dart';
 Future<void> main() async {
 
   FlavorConfig(
-    flavor: Flavor.web_app,
-    color: Colors.blue,
+    flavor: Flavor.practitioner,
+    color: Colors.pink,
     values: FlavorValues(),
     subFlavor: SubFlavor.qa,
   );
 
- await commonAppSetup();
- await BaseAppSetup();
+  await commonAppSetup();
+  await BaseAppSetup();
 
 }
 
 Future<void> BaseAppSetup() async {
-   runApp(const WebApp());
+
+   runApp(const Practioner());
 }
 
-class WebApp extends StatelessWidget {
-  const WebApp({Key? key}) : super(key: key);
+class Practioner extends StatelessWidget {
+  const Practioner({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Container(
         child: Directionality(
-          textDirection: TextDirection.ltr,
-            child: Text('Web app')),
+            textDirection: TextDirection.ltr,
+            child: Text('Practioner')),
       ),
     );
   }
 }
-
