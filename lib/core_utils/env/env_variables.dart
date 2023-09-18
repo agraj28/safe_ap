@@ -24,13 +24,13 @@ class EnvironmentVariable {
   Future<void> init() async {
     switch (FlavorConfig.instance.flavor) {
       case Flavor.practitioner:
-        await dotenv.load(fileName: '.env.practitioner');
+        await dotenv.load(fileName:'.env.practitioner');
         break;
       case Flavor.patient:
-        await dotenv.load(fileName: '.env.patient');
+        await dotenv.load(fileName:'.env.patient');
         break;
       case Flavor.web_app:
-        await dotenv.load(fileName: '.env.webapp');
+        await dotenv.load(fileName:'.env.webapp');
         break;
     }
 
