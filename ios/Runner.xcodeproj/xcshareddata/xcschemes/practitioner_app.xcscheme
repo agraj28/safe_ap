@@ -23,14 +23,14 @@
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Practitioner  Debug"
+      buildConfiguration = "Debug-practitioner_app"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       shouldAutocreateTestPlan = "YES">
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Practitioner  Debug"
+      buildConfiguration = "Debug-practitioner_app"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -51,7 +51,7 @@
       </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Practitioner  Debug"
+      buildConfiguration = "Debug-practitioner_app"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -68,10 +68,10 @@
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Practitioner  Debug">
+      buildConfiguration = "Debug-practitioner_app">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Practitioner  Debug"
+      buildConfiguration = "Release-practitioner_app"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
