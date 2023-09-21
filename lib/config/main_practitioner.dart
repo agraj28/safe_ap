@@ -12,11 +12,11 @@ Future<void> main() async {
   );
 
   await commonAppSetup();
-  await BaseAppSetup();
+  await baseAppSetup();
 
 }
 
-Future<void> BaseAppSetup() async {
+Future<void> baseAppSetup() async {
 
    runApp(const Practioner());
 }
