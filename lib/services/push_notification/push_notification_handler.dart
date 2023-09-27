@@ -45,7 +45,8 @@ class PushNotificationHandler {
       return;
     }
 
-    // If you're going to use other Firebase services in the background, such as Firestore,Refresh googleSignin
+    // If you're going to use other Firebase services in the background,
+    // such as Firestore,Refresh googleSignin
     // make sure you call `initializeApp` before using other Firebase services.
     await Firebase.initializeApp();
   }

@@ -31,14 +31,14 @@ class LocalNotifications {
   // On going notification
   /// [notificationChannelId] This is the notification channel id,
   /// we can use this id for the clear all the push from the particular channel
-  /// [notificationChannelName] This is the notification channel name shown under App Settings
+  /// [notificationChannelName] This is the notification channel name shown
+  /// under App Settings
   /// [notificationChannelDes] Description of the notification channel
   Future<void> showStandardNotification(
       {@required String? title,
       @required String? body,
       int id = 0,
-      String? payload}) async {
-    return _showNotification(
+      String? payload}) async => _showNotification(
       _flutterLocalNotificationsPlugin,
       title: title ?? '',
       body: body ?? '',
@@ -46,7 +46,6 @@ class LocalNotifications {
       payload: payload ?? '',
       type: null,
     );
-  }
 
   // FUNCTIONS FOR NOTIFICATIONS
   Future _showNotification(
@@ -56,9 +55,7 @@ class LocalNotifications {
     @required NotificationDetails? type,
     String? payload,
     int id = 0,
-  }) {
-    return notifications.show(id, title, body, type, payload: payload);
-  }
+  }) => notifications.show(id, title, body, type, payload: payload);
 
   /// Only for [Android],
   /// To remove the notification from system tray using the notification id.

@@ -46,7 +46,9 @@ class FirebaseCloudMessaging {
       FirebaseMessaging.onMessage.listen((RemoteMessage message) {
         LogUtil().printLog(
             message:
-                'Message title: ${message.notification?.title}, body: ${message.notification?.body}, data: ${message.data}');
+                'Message title: ${message.notification?.title}, '
+                    'body: ${message.notification?.body}, '
+                    'data: ${message.data}');
 
         // Parse the message received
 

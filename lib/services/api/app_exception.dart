@@ -86,6 +86,7 @@ class ErrorModel {
 
   @override
   String toString() {
-    return 'ErrorModel{errorMessageKey: $errorMessageKey, errorMessage: $errorMessage, errorCode: $errorCode}';
+    return 'ErrorModel{errorMessageKey: $errorMessageKey, '
+        'errorMessage: $errorMessage, errorCode: $errorCode}';
   }
 }
