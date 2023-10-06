@@ -20,6 +20,7 @@ class EnvironmentVariable {
   String _messaging_sender_id = '';
   String _project_id = '';
   String _app_id = '';
+  String _security_key = '';
 
   Future<void> init() async {
     switch (FlavorConfig.instance.flavor) {
@@ -43,6 +44,7 @@ class EnvironmentVariable {
     _messaging_sender_id = dotenv.get('MESSAGING_SENDER_ID', fallback: '');
     _project_id = dotenv.get('PROJECT_ID', fallback: '');
     _app_id =  dotenv.get( 'APP_ID', fallback: '');
+    _security_key = dotenv.get('SECURITY_KEY',fallback: '');
 
   }
 
@@ -55,4 +57,5 @@ class EnvironmentVariable {
   String get messaging_sender_id => _messaging_sender_id;
   String get project_id => _project_id;
   String get app_id => _app_id;
+  String get security_key => security_key;
 }

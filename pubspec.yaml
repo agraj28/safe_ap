@@ -71,7 +71,6 @@ dependencies:
   firebase_messaging: ^10.0.8
   overlay_support: ^1.2.1
   flutter_local_notifications: ^5.0.0
-  cloud_firestore: ^1.0.4
 
   #webview
   webview_flutter: ^2.0.12
@@ -115,6 +114,7 @@ dependencies:
   flutter_markdown: ^0.6.6
   country_picker: ^2.0.8
   flutter_dotenv: ^5.0.2
+  encrypt: ^5.0.1
 
 dev_dependencies:
   flutter_test:
